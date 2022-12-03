@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios/512/repository.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Blaze's Library</h1>
+    </nav>
+    <div class="body-container">
+        <div class="add-book">
+            <button data-modal-target="#modal" class="button-add-book">+ Add book</button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="modal-title">Add new book</div>
+                <button data-close-button class="modal-close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action='' method='get' class="input-form">
+                    <input type="text" id="form-title" name="form-title" placeholder="Title">
+                    <input type="text" id="form-author" name="form-author" placeholder="Author">
+                    <input type="number" id="form-pages" name="form-pages" placeholder="Pages">
+                    <div class="checkbox-container">
+                        <label for="form-checkbox">Have you read it?</label>
+                        <input type="checkbox" id="form-checkbox" name="form-checkbox">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="book-card-container">
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Copyright © 2022 Blaze</h3>
+    </div>
+
+</body>
+
+</html>
